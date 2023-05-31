@@ -2,7 +2,9 @@ project(GNN)
 cmake_minimum_required(VERSION 2.8)
 aux_source_directory(. SRC_LIST)
 
-include_directories(./include/)
+
+find_package(Eigen3 REQUIRED)
+include_directories(${EIGEN3_INCLUDE_DIR})
 
 add_executable(${PROJECT_NAME} ${SRC_LIST})
 

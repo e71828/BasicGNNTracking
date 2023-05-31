@@ -1,7 +1,8 @@
 #ifndef HELPER_H
 #define HELPER_H
 
-#include <eigen/Eigen/Core>
+#include <Eigen/Core>
+#define M_PI           3.14159265358979323846  /* pi */
 
 template<size_t Dimension>
 const double normalDistributionDensity(const Eigen::Matrix<double, Dimension, Dimension> & cov,
